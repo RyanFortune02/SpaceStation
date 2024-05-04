@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2707,11 +2707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926590347846174691, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: EnableRotation
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4926590347846174691, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: EnableLinearMovement
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4926590347846174712, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Name
@@ -2742,16 +2742,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: EnableMovementDuringAim
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: EnableRotationDuringAim
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: EnableMovementDuringReady
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: UseCharacterCollisionData
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: EnableMovementDuringPreTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: EnableRotationDuringPreTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: EnableMovementDuringPostTeleport
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885351, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: AimButton
+      value: 268435456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885351, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: InputMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885351, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: TeleportButton
+      value: 536870912
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885364, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
