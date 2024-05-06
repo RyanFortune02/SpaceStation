@@ -31,7 +31,7 @@ public class HealthManager : MonoBehaviour
  
     public void IncreaseHealth(int amount)
     {
-        currentHealth = currentHealth;
+        currentHealth += amount;
         currentHealth = Mathf.Min(currentHealth, maxHealth);  //Keeps health from going below zero  https://docs.unity3d.com/ScriptReference/Mathf.Min.html
         UpdateHealthDisplay();
     }

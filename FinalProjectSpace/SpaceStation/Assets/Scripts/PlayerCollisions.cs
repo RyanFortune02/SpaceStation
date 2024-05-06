@@ -22,6 +22,7 @@ public class PlayerCollisions : MonoBehaviour
         if (collision.gameObject.tag == "Health")
         {
             healthManager.IncreaseHealth(25);
+            Destroy(collision.gameObject);
         }
         //Decrease health when colliding with floating objects
         else if (collision.gameObject.tag == "FloatingObject") 
