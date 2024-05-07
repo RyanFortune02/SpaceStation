@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour
 {
     public int maxHealth = 100; //Max & Min allowed health
     public int minHealth = 0;
-    private int currentHealth;  //Current health value
+    public int currentHealth;  //Current health value
 
     public Text HealthText;  //Health Display in UI
 

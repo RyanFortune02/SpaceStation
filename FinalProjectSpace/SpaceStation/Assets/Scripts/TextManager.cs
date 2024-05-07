@@ -21,18 +21,19 @@ public class TextManager : MonoBehaviour
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
 
-        if (currentSceneName == "Cryoscene")
+        if (currentSceneName == "CryoScene")
         {
-            SetMessageText("Welcome! You have just woken from Cryosleep! Look to your left for instructions.");
+            SetMessageText("Welcome! You have just woken from Cryosleep! Look to your left for instructions. Click the first Button!");
         }
         else if (currentSceneName == "SpaceHallway")
         {
-            SetMessageText("Escape randomly floating objects\r\nFind food resources for health \r\n");
+            SetMessageText("You seem hungry as you have not eaten in over 100 years.\r\nFind food resources for health\r\nEscape floating objects as they look like they are dangerous!\r\n");
         }
-        else  //
-        {
-            SetMessageText("Welcome to the end scene");
-        }
+        //else if (currentSceneName == FailScene)
+        //{
+         //   SetMessageText("You have failed the game. Click the button if you would like to restart!");
+        //}
+        //else if (currentSceneName == )
     }
 
     void Update()
