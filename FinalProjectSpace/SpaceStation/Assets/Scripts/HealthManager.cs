@@ -14,8 +14,8 @@ public class HealthManager : MonoBehaviour
 
     void Start()
     {
-        //Set the starting health
-        currentHealth = 50;
+        //Set the starting health (trying to use inspector to change health for each level.
+        //currentHealth = 50;
         //Initialize Display for health
         UpdateHealthDisplay();
     }
