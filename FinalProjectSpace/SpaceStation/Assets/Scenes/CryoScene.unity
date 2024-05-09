@@ -1299,7 +1299,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Find your way to the control center to find an escape
-            pod to get away from invaders!
+            pod to get away from invaders! Look for the button to go to the next
+            room.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &620618689
@@ -1880,8 +1881,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: ' To shoot the gun you hold the Hand Trigger to keep
-            holding then press the Index Trigger to shoot. Look for the button to
-            go to the next room.'
+            holding then press the Index Trigger to shoot. c'
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &873365485
