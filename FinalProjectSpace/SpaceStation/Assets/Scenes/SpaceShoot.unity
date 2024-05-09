@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd390ad85f5c7f42a001e82c6356c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1891102743}
   followSpeed: 2
 --- !u!1 &320738033
 GameObject:
@@ -10357,6 +10357,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 4926590347321325546, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
   m_PrefabInstance: {fileID: 1891102741}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1891102743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4926590347846174690, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+  m_PrefabInstance: {fileID: 1891102741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908102466
 GameObject:
   m_ObjectHideFlags: 0
@@ -11133,6 +11138,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1148040844}
+    - target: {fileID: 5300312715094677382, guid: 3b40a0ed7b4f08b4eb735ebfc55428e7, type: 3}
+      propertyPath: textManager
+      value: 
+      objectReference: {fileID: 1738891996}
     - target: {fileID: 8372451065699128456, guid: 3b40a0ed7b4f08b4eb735ebfc55428e7, type: 3}
       propertyPath: m_RootOrder
       value: 12

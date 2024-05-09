@@ -215,9 +215,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: To pick up objects you use the Hand Trigger.  To shoot
-            the gun you hold the Hand Trigger to keep holding then press the Index
-            Trigger to shoot.
+          m_StringArgument: To pick up objects you use the Hand Trigger.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &50908028
@@ -1881,7 +1879,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Look for the button to go to the next room.
+          m_StringArgument: ' To shoot the gun you hold the Hand Trigger to keep
+            holding then press the Index Trigger to shoot. Look for the button to
+            go to the next room.'
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &873365485
