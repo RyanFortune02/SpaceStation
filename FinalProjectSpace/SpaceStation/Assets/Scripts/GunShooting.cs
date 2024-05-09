@@ -11,15 +11,15 @@ public class GunShooting : MonoBehaviour
 
     void Update()
     {
-        if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) && ovrGrabbable.isGrabbed)// Maybe chance to float for smaller trigger press  //https://developer.oculus.com/documentation/unity/unity-ovrinput/#unity-ovrinput-touch
+        if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) && ovrGrabbable.isGrabbed) // Maybe chance to float for smaller trigger press using float  //https://developer.oculus.com/documentation/unity/unity-ovrinput/#unity-ovrinput-touch
         {
             Shoot();
         }
     }
 
-    void Shoot()
+    void Shoot()  //https://stackoverflow.com/questions/23538680/bullet-prefab-script
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);  
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * bulletSpeed);
     }
 }

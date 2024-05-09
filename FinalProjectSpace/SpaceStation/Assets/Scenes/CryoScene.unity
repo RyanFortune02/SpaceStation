@@ -215,7 +215,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: First set of instructions
+          m_StringArgument: To pick up objects you use the Hand Trigger.  To shoot
+            the gun you hold the Hand Trigger to keep holding then press the Index
+            Trigger to shoot.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &50908028
@@ -1298,7 +1300,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'You have woken up '
+          m_StringArgument: Find your way to the control center to find an escape
+            pod to get away from invaders!
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &620618689
@@ -1878,7 +1881,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: First set of instructions
+          m_StringArgument: Look for the button to go to the next room.
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &873365485
@@ -2478,11 +2481,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ad403fe5cb1141c4db962f01954ad170, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2682,8 +2685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.160019, y: -1}
+  m_SizeDelta: {x: -296.37, y: -43.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086273387
 MonoBehaviour:
@@ -2757,8 +2760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -13.09}
-  m_SizeDelta: {x: -27.55, y: -41.72}
+  m_AnchoredPosition: {x: 0, y: -0.63000107}
+  m_SizeDelta: {x: -27.55, y: -13.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1109034386
 MonoBehaviour:
@@ -2793,7 +2796,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Instructions:'
+  m_Text: 'Instructions:
+
+    Click in order'
 --- !u!222 &1109034387
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2894,7 +2899,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: First set of instructions
+          m_StringArgument: To move around you use the left stick & to rotate you
+            use the right stick
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1116993525
@@ -3163,8 +3169,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -13.09}
-  m_SizeDelta: {x: -27.55, y: -41.72}
+  m_AnchoredPosition: {x: 1.6000061, y: -2.0499992}
+  m_SizeDelta: {x: -316.22, y: -63.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201707382
 MonoBehaviour:
@@ -3199,10 +3205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Requirements:\nWakeup in cryoscene \rw/ Tutorial\nEscape 3 randomly floating
-    objects\r\nFind 3 food resources for health \r\nRandom gravity issue and shoot
-    enemy to fix it \r\nFood or floating objects can be the scoring mechanic [ eat
-    food for health or collect objects for health]\r\nSound \r\nText UI "
+  m_Text: Cryo Chamber
 --- !u!222 &1201707383
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3348,8 +3351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -26.42, y: 5.5575}
-  m_SizeDelta: {x: 452.7876, y: 270.8568}
+  m_AnchoredPosition: {x: 4.8111, y: 2.9626}
+  m_SizeDelta: {x: 459.6571, y: 90.5982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1277562658
 PrefabInstance:
@@ -3897,7 +3900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hallway
+  m_Text: What's Next?
 --- !u!222 &1747553433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4247,7 +4250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885346, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885350, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: AimCollisionType
@@ -4291,7 +4294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885368, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885368, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: OrientationMode
@@ -4312,6 +4315,10 @@ PrefabInstance:
     - target: {fileID: 4926590348205885371, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590348205885373, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348205885373, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: AimCollisionLayerMask.m_Bits

@@ -27,18 +27,21 @@ public class TextManager : MonoBehaviour
         }
         else if (currentSceneName == "SpaceHallway")
         {
-            SetMessageText("You seem hungry as you have not eaten in over 100 years.\r\nFind food resources for health\r\nEscape floating objects as they look like they are dangerous!\r\n");
+            SetMessageText("You seem hungry as you have not eaten in over 100 years. Find food resources for health. Escape floating objects as they look like they are dangerous!");
         }
-        //else if (currentSceneName == FailScene)
+        else if (currentSceneName == "SpaceShoot")
+        {
+            SetMessageText("The gravity generators have been turned off by the aliens. Shoot the Aliens to turn the gravity back on.");
+        }
+        //else if (currentSceneName == FailScene)  //Will be added for final submission
         //{
          //   SetMessageText("You have failed the game. Click the button if you would like to restart!");
         //}
-        //else if (currentSceneName == )
-    }
-
-    void Update()
-    {
-
+        else if (currentSceneName == "EndScene")
+        {
+            SetMessageText("You have escape the invaders and made it to the main area of the Space Station. Look for the escape pod!");
+        }
+        
     }
 }
 
