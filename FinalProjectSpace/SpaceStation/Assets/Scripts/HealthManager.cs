@@ -8,7 +8,7 @@ public class HealthManager : MonoBehaviour
 {
     public int maxHealth = 100; //Max & Min allowed health
     public int minHealth = 0;
-    public int currentHealth;  //Current health value
+    public int currentHealth;  //Current health value set in inspector
 
     public Text HealthText;  //Health Display in UI
 
@@ -22,10 +22,10 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        //End game if health reaches zero
+        //End game if health reaches zero (that is what minimum health is set to in inspector)
         if (currentHealth <= minHealth)
         {
-            SceneManager.LoadScene("FailScene");   //To be created later
+            SceneManager.LoadScene("FailScene");
         }
     }
  

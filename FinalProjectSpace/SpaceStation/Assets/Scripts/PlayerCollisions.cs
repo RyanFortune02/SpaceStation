@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCollisions : MonoBehaviour
 {
     public HealthManager healthManager;
+    public TextManager textManager;
 
     //Get spawn position
     private Vector3 spawnPosition;  //Position
@@ -29,6 +30,12 @@ public class PlayerCollisions : MonoBehaviour
         {
             healthManager.DecreaseHealth(25);
             ResetPlayerPosition();
+        }
+        else if (collision.gameObject.tag == "FallPlane")  //if player falls off map it resets them to spawn  (too many of imported  assets allow to walk through windows)
+        {
+            ResetPlayerPosition();
+            textManager.SetMessageText("Watch your step!");
+
         }
     }
     void ResetPlayerPosition() //Reset to spawn

@@ -20,7 +20,7 @@ public class BulletBehaviour : MonoBehaviour
             playerRigidbody.useGravity = true;
             //Update text
             textManager.SetMessageText("You just killed one of the Aliens!");
-            //add controller vibration can be improvement
+            //add controller vibration can be improvement (looked into and too many issues for now)
             //Add score component later for impovement
         }
         else  //To keep bullets from boucning around or still existing after collision

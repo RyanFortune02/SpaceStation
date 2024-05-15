@@ -20,7 +20,7 @@ public class TextManager : MonoBehaviour
         //Unity Docs for future reference: https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.GetActiveScene.html
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
-
+        //Sets text for start of each scene
         if (currentSceneName == "CryoScene")
         {
             SetMessageText("Welcome! You have just woken from Cryosleep! Look to your left for instructions. Click the first Button!");
@@ -33,13 +33,17 @@ public class TextManager : MonoBehaviour
         {
             SetMessageText("The gravity generators have been turned off by the aliens. Shoot the Aliens to turn the gravity back on.");
         }
-        //else if (currentSceneName == FailScene)  //Will be added for final submission
-        //{
-         //   SetMessageText("You have failed the game. Click the button if you would like to restart!");
-        //}
+        else if (currentSceneName == "FailScene")
+        {
+            SetMessageText("You have failed the game. Click the button if you would like to restart!");
+        }
         else if (currentSceneName == "EndScene")
         {
             SetMessageText("You have escape the invaders and made it to the main area of the Space Station. Look for the escape pod!");
+        }
+        else if (currentSceneName == "Ending")
+        {
+            SetMessageText("You have arrived at Earth! or what is left of it...");
         }
         
     }
