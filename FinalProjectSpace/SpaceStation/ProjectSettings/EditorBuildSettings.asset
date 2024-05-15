@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CryoScene.unity
     guid: af6254958286f194ea7a98a2ff7f733e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SpaceHallway.unity
     guid: 78c3dfbca9f9ba845a6d564b55f11cbd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SpaceShoot.unity
     guid: 035e81439e2f06d4592b3c04e5eaed4c
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: ef68e1758d8813940b9250452e049b74
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FailScene.unity
     guid: 622b2d32337483d4993e557bf7fe4a63
   - enabled: 1
