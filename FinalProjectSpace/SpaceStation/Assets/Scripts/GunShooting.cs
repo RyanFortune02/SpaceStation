@@ -9,6 +9,15 @@ public class GunShooting : MonoBehaviour
     public float bulletSpeed = 1000f;  //Making bullet fast to appear life like
     public OVRGrabbable ovrGrabbable;
 
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
+
+    void Start()  //store position of gun to allow pickup after colliding with enemy
+    {
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
+    }
+    
     void Update()
     {
         if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) && ovrGrabbable.isGrabbed) // Maybe chance to float for smaller trigger press using float  //https://developer.oculus.com/documentation/unity/unity-ovrinput/#unity-ovrinput-touch
@@ -21,5 +30,11 @@ public class GunShooting : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);  
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * bulletSpeed);
+    }
+
+    public void ResetGunPosition()  //set position of gun to spawn
+    {
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
     }
 }

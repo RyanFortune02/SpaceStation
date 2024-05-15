@@ -9,9 +9,9 @@ public class ScoreManager : MonoBehaviour
     public int GameScore = 0;
     public Text GameScoreText;
 
-    public void IncrementGameScore()
+    public void IncrementGameScore(int score)
     {
-        GameScore += 50;
+        GameScore += score;
         UpdateScoreDisplay();
     }
 

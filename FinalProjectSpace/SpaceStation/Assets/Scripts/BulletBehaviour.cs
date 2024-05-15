@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    public GameObject player; //to attach player gameobject and enable gravity
+    public PlayerGravity playerGravity; //to increase kill count on manager
     public TextManager textManager; //reference text manager script
-
+    public ScoreManager scoreManager;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -15,13 +15,17 @@ public class BulletBehaviour : MonoBehaviour
             //Destroys bullet and Enemy
             Destroy(collision.gameObject); 
             Destroy(gameObject);
-            //Turn gravity on for player
-            Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
-            playerRigidbody.useGravity = true;
+
+            //Increase kill count in PlayerGravity
+            playerGravity.EnemyKilled();
+
             //Update text
             textManager.SetMessageText("You just killed one of the Aliens!");
             //add controller vibration can be improvement (looked into and too many issues for now)
+            
             //Add score component later for impovement
+            scoreManager.IncrementGameScore(50);
+
         }
         else  //To keep bullets from boucning around or still existing after collision
         {

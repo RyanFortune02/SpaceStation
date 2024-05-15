@@ -11,10 +11,25 @@ public class EnemyBehaviour : MonoBehaviour
 
     public float followSpeed = 2.0f;  //May make faster in future, appears slow
 
-    
+    private Vector3 spawnPosition;
+
+    void Start()
+    {
+        spawnPosition = transform.position; //store starting spot
+    }
+
     void Update()
     {
         transform.LookAt(player); //Makes alien look at player & line under makes it move toward
         transform.position = Vector3.MoveTowards(transform.position, player.position, followSpeed * Time.deltaTime);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        //keep the aliens from going outside of the map or glitching
+        if (collision.gameObject.CompareTag("Map"))
+        {
+            transform.position = spawnPosition;
+        }
     }
 }
