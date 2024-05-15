@@ -39,7 +39,7 @@ public class TextManager : MonoBehaviour
         }
         else if (currentSceneName == "EndScene")
         {
-            SetMessageText("You have escape the invaders and made it to the main area of the Space Station. Look for the escape pod!");
+            SetMessageText("You have escape the invaders and made it to the main area of the Space Station. Look for the key card to use the escape pod! (Maybe in the control room)");
         }
         else if (currentSceneName == "Ending")
         {

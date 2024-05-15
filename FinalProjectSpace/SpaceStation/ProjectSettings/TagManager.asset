@@ -9,6 +9,8 @@ TagManager:
   - Map
   - Enemy
   - FallPlane
+  - EscapePod
+  - KeyCard
   layers:
   - Default
   - TransparentFX

@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SpaceHallway.unity
     guid: 78c3dfbca9f9ba845a6d564b55f11cbd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpaceShoot.unity
     guid: 035e81439e2f06d4592b3c04e5eaed4c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: ef68e1758d8813940b9250452e049b74
   - enabled: 0
     path: Assets/Scenes/FailScene.unity
     guid: 622b2d32337483d4993e557bf7fe4a63
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 09af6be7fecfe7341b2c944d6b7c4b2d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 82540a5b29e28c14eb7ec57e11dfa3ae, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a4a5212bb9d4caf46bb789e6188ba312, type: 2}

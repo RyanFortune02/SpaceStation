@@ -21,7 +21,7 @@ public class GunShooting : MonoBehaviour
     void Update()
     {
         if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) && ovrGrabbable.isGrabbed) // Maybe chance to float for smaller trigger press using float  //https://developer.oculus.com/documentation/unity/unity-ovrinput/#unity-ovrinput-touch
-        {
+        {  //only shoots gun when grabbed and holding trigger to prevent firing when not holding
             Shoot();
         }
     }

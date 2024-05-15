@@ -24,10 +24,10 @@ public class EnemyBehaviour : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, player.position, followSpeed * Time.deltaTime);
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
         //keep the aliens from going outside of the map or glitching
-        if (collision.gameObject.CompareTag("Map"))
+        if (other.gameObject.CompareTag("Map"))
         {
             transform.position = spawnPosition;
         }

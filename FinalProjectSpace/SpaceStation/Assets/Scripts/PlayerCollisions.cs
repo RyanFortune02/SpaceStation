@@ -12,7 +12,9 @@ public class PlayerCollisions : MonoBehaviour
     private Vector3 spawnPosition;  //Position
     private Quaternion spawnRotation;  //Rotation
 
-    private int foodpickup;
+    private int foodpickup;  //counter for food pickup
+
+
 
     void Start()  //starting spawn position
     {
@@ -51,6 +53,7 @@ public class PlayerCollisions : MonoBehaviour
         {
             ResetPlayerPosition();
             textManager.SetMessageText("Watch your step!");
+            gunShooting.ResetGunPosition();
 
         }
     }

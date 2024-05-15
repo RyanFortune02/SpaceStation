@@ -12,6 +12,7 @@ public class HealthManager : MonoBehaviour
 
     public Text HealthText;  //Health Display in UI
 
+
     void Start()
     {
         //Set the starting health (trying to use inspector to change health for each level.
@@ -25,7 +26,7 @@ public class HealthManager : MonoBehaviour
         //End game if health reaches zero (that is what minimum health is set to in inspector)
         if (currentHealth <= minHealth)
         {
-            SceneManager.LoadScene("FailScene");
+            LoadScene("FailScene");
         }
     }
  
@@ -46,5 +47,10 @@ public class HealthManager : MonoBehaviour
     void UpdateHealthDisplay()
     {
         HealthText.text = "Health: " + currentHealth;
+    }
+
+    private void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
