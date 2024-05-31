@@ -1,6 +1,6 @@
 **Title**: SpaceStation Escape
 **Creator**: Ryan Fortune
-This Project was created for my Introduction to Virtual Reality Class.
+This Project was created for my Introduction to Virtual Reality Class. Using C# & Unity for Oculus Quest 2 Headset
 **Gameplay Link**: https://youtu.be/3Q6Ebuxxkj0 
 **Trailer Link**: https://youtube.com/shorts/wkoVAAqgiKo?feature=share (images created using DALL-E)
 **Project Description**:
